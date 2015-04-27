@@ -1,0 +1,5 @@
+# Everything is pre-compiled, so no source
+rpi-tools source: source-is-missing
+
+# this only matters for inclusion in "main"
+rpi-tools source: license-problem-gfdl-invariants

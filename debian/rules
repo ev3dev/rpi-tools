@@ -1,0 +1,21 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+# This has to be exported to make some magic below work.
+export DH_OPTIONS
+
+
+%:
+	dh $@
+
+override_dh_strip:
+	# everything is pre-compiled, do don't do anything
+
+override_dh_makeshlibs:
+	# everything is pre-compiled, do don't do anything
+
+override_dh_shlibdeps:
+	# everything is pre-compiled, do don't do anything

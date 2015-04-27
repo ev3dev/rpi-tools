@@ -1,0 +1,25 @@
+Source: rpi-tools
+Section: devel
+Priority: optional
+Maintainer: David Lechner <david@lechnology.com>
+Build-Depends: debhelper (>= 9.0.0)
+Standards-Version: 3.9.5
+Homepage: https://github.com/raspberrypi/tools
+Vcs-Git: git://github.com/ev3dev/rpi-tools.git
+Vcs-Browser: https://github.com/ev3dev/rpi-tools
+
+Package: rpi-mkimage
+Architecture: all
+Depends: ${misc:Depends}, binutils, perl
+Description: Tool to add "trailer" to device-tree capable Raspberry Pi kernels.
+ The Raspberry Pi bootloader checks for a special "trailer" on the kernel
+ image to indicate that a kernel is device-tree capable.
+ .
+ * mkknlimg: Adds the trailer to a kernel image.
+ * knlinfo: Lists trailer info for a kernel image.
+
+Package: gcc-linaro-arm-linux-gnueabihf-raspbian
+Architecture: i386 amd64
+Depends: ${misc:Depends}, lsb
+Description: Toolchain for cross-building Raspbian (armv6) binaries.
+ This is the "official" toolchain from the Raspberry Pi foundation.
