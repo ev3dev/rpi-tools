@@ -1,3 +1,11 @@
+rpi-tools (20150602) stable; urgency=medium
+
+  [ Phil Elwell ]
+  * mkknlimg: Enable warnings and fix a few uses of undef'd variables
+  * Update mkknlimg and knlinfo from the rpi-4.0.y kernel
+
+ -- David Lechner <david@lechnology.com>  Mon, 14 Sep 2015 21:32:36 -0500
+
 rpi-tools (20150402) trusty; urgency=low
 
   * Initial Release.
