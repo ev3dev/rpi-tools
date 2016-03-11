@@ -1,0 +1,22 @@
+# This is a cross-compiler, so this is expected
+gcc-arm-rpi-4.9.3-linux-gnueabihf binary: binary-from-other-architecture
+
+# We don't touch the pre-compiled binaries
+gcc-arm-rpi-4.9.3-linux-gnueabihf binary: statically-linked-binary
+gcc-arm-rpi-4.9.3-linux-gnueabihf binary: binary-or-shlib-defines-rpath
+gcc-arm-rpi-4.9.3-linux-gnueabihf binary: binary-with-bad-dynamic-table
+gcc-arm-rpi-4.9.3-linux-gnueabihf binary: embedded-library
+gcc-arm-rpi-4.9.3-linux-gnueabihf binary: unstripped-binary-or-object
+gcc-arm-rpi-4.9.3-linux-gnueabihf binary: hardening-no-relro
+gcc-arm-rpi-4.9.3-linux-gnueabihf binary: shared-lib-without-dependency-information
+
+# for bin/arm-linux-gnueabihf-ct-ng.config
+gcc-arm-rpi-4.9.3-linux-gnueabihf binary: script-not-executable
+gcc-arm-rpi-4.9.3-linux-gnueabihf binary: shell-script-fails-syntax-check
+
+# since we skipped dh_shlibdeps in debian/rules
+gcc-arm-rpi-4.9.3-linux-gnueabihf binary: missing-depends-line
+gcc-arm-rpi-4.9.3-linux-gnueabihf binary: missing-dependency-on-libc
+
+# not going to remove it
+gcc-arm-rpi-4.9.3-linux-gnueabihf binary: extra-license-file

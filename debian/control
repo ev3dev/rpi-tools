@@ -18,8 +18,8 @@ Description: Tool to add "trailer" to device-tree capable Raspberry Pi kernels.
  * mkknlimg: Adds the trailer to a kernel image.
  * knlinfo: Lists trailer info for a kernel image.
 
-Package: gcc-linaro-arm-linux-gnueabihf-raspbian
-Architecture: i386 amd64
+Package: gcc-arm-rpi-4.9.3-linux-gnueabihf
+Architecture: amd64
 Depends: ${misc:Depends}, lsb
 Description: Toolchain for cross-building Raspbian (armv6) binaries.
  This is the "official" toolchain from the Raspberry Pi foundation.
