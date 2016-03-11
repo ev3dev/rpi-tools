@@ -8,7 +8,7 @@ easier to install.
 You can get the packages by adding the ev3dev.org Ubuntu package repository to
 your `/etc/apt/sources.list` file...
 
-    sudo apt-add-repository "deb http://ev3dev.org/ubuntu trusty main
+    sudo apt-add-repository "deb http://archive.ev3dev.org/ubuntu trusty main"
 
 You also need to install the public key with...
 
