@@ -3,6 +3,7 @@
 --tar-ignore=rpi-tools/arm-bcm2708/arm-bcm2708*
 --tar-ignore=rpi-tools/arm-bcm2708/gcc-linaro*
 --tar-ignore=rpi-tools/configs
+--tar-ignore=rpi-tools/mkimage
 --tar-ignore=rpi-tools/pkg
 --tar-ignore=rpi-tools/test_code
 --tar-ignore=rpi-tools/usbboot

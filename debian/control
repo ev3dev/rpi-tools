@@ -8,16 +8,6 @@ Homepage: https://github.com/raspberrypi/tools
 Vcs-Git: git://github.com/ev3dev/rpi-tools.git
 Vcs-Browser: https://github.com/ev3dev/rpi-tools
 
-Package: rpi-mkimage
-Architecture: all
-Depends: ${misc:Depends}, binutils, perl
-Description: Tool to add "trailer" to device-tree capable Raspberry Pi kernels.
- The Raspberry Pi bootloader checks for a special "trailer" on the kernel
- image to indicate that a kernel is device-tree capable.
- .
- * mkknlimg: Adds the trailer to a kernel image.
- * knlinfo: Lists trailer info for a kernel image.
-
 Package: gcc-arm-rpi-4.9.3-linux-gnueabihf
 Architecture: amd64
 Depends: ${misc:Depends}, lsb
