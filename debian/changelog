@@ -1,3 +1,10 @@
+rpi-tools (20160215) trusty; urgency=medium
+
+  * [popcornmix] Add custom ct-ng build of gcc 4.9.3 with Pi 1 support
+  * Drop mkkniimg binary package.
+
+ -- David Lechner <david@lechnology.com>  Fri, 11 Mar 2016 13:31:06 -0600
+
 rpi-tools (20150602) stable; urgency=medium
 
   [ Phil Elwell ]
