@@ -5,15 +5,10 @@ This is a fork the "official" Raspberry Pi tools (for building kernel images)
 from the Raspberry Pi foundation. This fork adds Debian packaging to make it
 easier to install.
 
-You can get the packages by adding one of the following to your
-`/etc/apt/sources.list` file...
+You can get the packages by adding the ev3dev.org Ubuntu package repository to
+your `/etc/apt/sources.list` file...
 
-    # For i386 and amd64
-    deb http://ev3dev.org/debian trusty main
-    # For armel and armhf
-    deb http://ev3dev.org/debian jessie main
-    # For raspbian amrhf
-    deb http://ev3dev.org/raspbian jessie main
+    sudo apt-add-repository "deb http://ev3dev.org/ubuntu trusty main
 
 You also need to install the public key with...
 
@@ -23,14 +18,10 @@ And don't for get to update...
 
     sudo apt-get update
 
-Install the Raspbian (armv6) cross-build toolchain (i386 and amd64 only) with...
+Install the Raspbian (armv6) cross-build toolchain (amd64 only) with...
 
-    sudo apt-get install gcc-linaro-arm-linux-gnueabihf-raspbian
+    sudo apt-get install gcc-arm-rpi-4.9.3-linux-gnueabihf
 
-The toolchain installs to `/usr/lib/gcc-linaro-arm-linux-gnueabihf-raspbian`.
+The toolchain installs to `/usr/lib/x86_64-linux-gnu/gcc-arm-rpi-4.9.3-linux-gnueabihf`.
 It is not included in your `PATH` by default since it conflicts with Debian/Ubuntu
 armhf (armv7) toolchains.
-
-Install the `mkknlimg` and `knlinfo` tools with...
-
-    sudo apt-get install rpi-mkimage
